@@ -5,8 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header>
+            <div class="row">
+                <a class="logo" href="index.php"><img src="img/logo.svg" alt="Юlang"></a>
+                <menu>
+                    <a href="#">article</a>
+                    <a href="#">vocalubere</a>
+                </menu>
+            </div>
+    </header>
+
 </body>
 </html>
