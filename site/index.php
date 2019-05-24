@@ -9,14 +9,29 @@
 </head>
 <body>
     <header>
-            <div class="row">
-                <a class="logo" href="index.php"><img src="img/logo.svg" alt="Юlang"></a>
-                <menu>
-                    <a href="#">article</a>
-                    <a href="#">vocalubere</a>
-                </menu>
-            </div>
+        <div class="row">
+            <a href="index.php"><img class="logo" src="img/logo.svg" alt="Юlang"></a>
+            <menu>
+                <a class="active menu" href="#">Article</a>
+                <a class="menu" href="#">Vocalubere</a>
+            </menu>
+        </div>
     </header>
-
+    <main>
+        <div class="article">
+            <h6 class="author">Author</h6>
+            <h1>Firs Level</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam doloribus facilis vitae porro fugiat neque illo, iure, architecto eligendi quidem asperiores, corporis tempore in tempora maiores sit dicta nam delectus?</p>
+        </div>
+    </main>
+    <!-- <footer>
+        <div class="row">
+            <a href="index.php"><img class="logo" src="img/logo.svg" alt="Юlang"></a>
+            <menu>
+                <a class="menu" href="#">article</a>
+                <a class="menu" href="#">vocalubere</a>
+            </menu>
+        </div>
+    </footer> -->
 </body>
 </html>
