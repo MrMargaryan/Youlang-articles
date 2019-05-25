@@ -23,9 +23,16 @@
             <h6 class="author">Gamlet Margaryan</h6>
             <h1>Cases, Power Supplies and Internal PC Components</h1>
             <h2>Cases</h2>
-            <p>The case of a desktop computer contains all of the internal components such as the power supply, motherboard, central processing unit (CPU), memory, disk drives and adapter cards.</p>
             <br>
+            <p>The case of a desktop computer contains all of the internal components such as the power supply, motherboard, central processing unit (CPU), memory, disk drives and adapter cards.</p>
             <p>Cases are made of plastic, steel or aluminum.</p>
+            <p>A device form factor - is its construction and look. The cases of desktop computers are produced in different form factors:</p>
+            <ul>
+                <li>Horizontal case - this form factor is no longer popular</li>
+                <li>Full-size tower - this is a computer case which is oriented vertically</li>
+                <li>Compact tower - this is a smaller version of the full-size tower</li>
+                <li>All-in-one - all of the computer system components are integrated into the display</li>
+            </ul>
         </div>
     </main>
     <!-- <footer>

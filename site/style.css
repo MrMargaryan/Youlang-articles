@@ -81,6 +81,7 @@ h1 {
     font-weight: 700;
     font-size: 50pt;
     color: #444;
+    margin-bottom: 50px;
 }
 
 h6.author {
@@ -102,12 +103,13 @@ h1:after {
 
 p {
     font-size: 12pt;
+    margin-bottom: 20px;
 }
 
 h2 {
     font-weight: 400;
     font-size: 20pt;
-    margin: 100px 0 40px 0;
+    margin-bottom: 30px;
 }
 
 /* .article p:first-of-type::first-letter {
@@ -119,4 +121,8 @@ h2 {
 .article_main_img {
     width: 100%;
     margin-bottom: 100px;
+}
+
+ul {
+    list-style: armenian; /* special for Gamlet */
 }
