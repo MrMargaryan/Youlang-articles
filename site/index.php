@@ -33,6 +33,8 @@
                 <li>Compact tower - this is a smaller version of the full-size tower</li>
                 <li>All-in-one - all of the computer system components are integrated into the display</li>
             </ul>
+            <img class="article_img" src="img/desktop/article_main.png">
+            <small class="img_signature">Lorem ipsum dolor sit amet.</small>
         </div>
     </main>
     <!-- <footer>
