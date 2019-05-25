@@ -10,6 +10,7 @@ body {
     display: flex;
     justify-content: center;
     font-family: 'raleway';
+    background-color: #4d4d4d;
 }
 
 header {
@@ -62,14 +63,17 @@ header .row > a {
 
 main {
     width: 70%;
-    padding-top: 185px;
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, .5); */
+    margin-top: 150px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, .2);
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
+    height: 2000px;
 }
 
 .article {
-    width: 80%;
+    width: 70%;
+    margin: 0 auto;
 }
 
 h1 {
@@ -90,19 +94,29 @@ h6.author {
 h1:after {
     content: "";
     display: block;
-    width: 100px;
-    height: 7px;
-    background-color: #000;
+    width: 200px;
+    height: 6px;
+    background-color: #444;
     margin: 20px auto;
 }
 
 p {
-    font-size: 14pt;
+    font-size: 12pt;
 }
 
-.article p:first-of-type::first-letter {
+h2 {
+    font-weight: 400;
+    font-size: 20pt;
+    margin: 100px 0 40px 0;
+}
+
+/* .article p:first-of-type::first-letter {
     font-size: 42pt;
     font-weight: 700;
     margin-right: 15px;
-    
+} */
+
+.article_main_img {
+    width: 100%;
+    margin-bottom: 100px;
 }

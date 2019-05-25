@@ -18,10 +18,14 @@
         </div>
     </header>
     <main>
+        <img class="article_main_img" src="img/desktop/article_main.png">
         <div class="article">
-            <h6 class="author">Author</h6>
-            <h1>Firs Level</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam doloribus facilis vitae porro fugiat neque illo, iure, architecto eligendi quidem asperiores, corporis tempore in tempora maiores sit dicta nam delectus?</p>
+            <h6 class="author">Gamlet Margaryan</h6>
+            <h1>Cases, Power Supplies and Internal PC Components</h1>
+            <h2>Cases</h2>
+            <p>The case of a desktop computer contains all of the internal components such as the power supply, motherboard, central processing unit (CPU), memory, disk drives and adapter cards.</p>
+            <br>
+            <p>Cases are made of plastic, steel or aluminum.</p>
         </div>
     </main>
     <!-- <footer>
