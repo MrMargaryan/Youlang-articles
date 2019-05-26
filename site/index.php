@@ -6,13 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="vendors/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
     <div class="modal_window">
         <h1>Wana add some words?</h1>
         <div class="row">
             <a href="" class="button">Yes</a>
-            <a href="" class="button">Discard</a>
+            <a href="" class="button discard">Discard</a>
         </div>
     </div>
     <header>
@@ -53,5 +55,6 @@
             </menu>
         </div>
     </footer> -->
+
 </body>
 </html>
