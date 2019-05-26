@@ -19,8 +19,8 @@
         <div class="row">
             <a href="index.php"><img class="logo" src="img/logo.svg" alt="Юlang"></a>
             <menu>
-                <a class="active menu" href="#">Article</a>
-                <a class="menu" href="#">Vocalubere</a>
+                <a class="link active menu" href="#">Article</a>
+                <a class="link menu" href="#">Vocalubere</a>
             </menu>
         </div>
     </header>
@@ -53,5 +53,9 @@
             </menu>
         </div>
     </footer> -->
+    <div class="vocabulary_box">
+        <a href="#" class="voc_button">voc</a>
+        <div class="vocabulary"></div>
+    </div>
 </body>
 </html>
