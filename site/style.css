@@ -198,26 +198,27 @@ ul {
     z-index: 10;
 } */
 
+.voc_btn {
+    height: 100px;
+    width: 100px;
+    background-color: rgba(228, 225, 225, .9);
+    border: none;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
 .open_voc_btn {
-    height: 50px;
-    width: 50px;
-    position: absolute;
-    background-color: #fff;
-    border-radius: 50%;
-    top: 75px;
     position: fixed;
+    top: 150px;
     left: 0;
 }
 
 .close_voc_btn {
-    height: 50px;
-    width: 50px;
-    position: relative;
-    background-color: #fff;
-    border-radius: 50%;
-    border-top-right-radius: 20px;
-    top: 0;
-    left: calc(100% - 50px);
+    top: 150px;
+    left: 100%;
+    position: absolute;
 }
 
 .vocabulary_box {
@@ -285,5 +286,3 @@ ul {
     border-color: transparent white;
     border-style: solid;
 }
-
-;
