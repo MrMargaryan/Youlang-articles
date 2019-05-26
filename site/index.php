@@ -6,14 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="vendors/jquery-ui.min.css">
     <script src="vendors/jquery-3.4.1.min.js"></script>
+    <script src="vendors/jquery-ui.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
     <div class="modal_window">
         <h1>Wana add some words?</h1>
         <div class="row">
-            <button class="button">Yes</button>
+            <button class="button yes">Yes</button>
             <button class="button discard">Discard</button>
         </div>
     </div>

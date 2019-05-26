@@ -1,0 +1,214 @@
+Cases, Power Supplies and Internal PC Components
+
+
+Cases
+
+The case of a desktop computer contains all of the internal components such as the power supply, motherboard, central processing unit (CPU), memory, disk drives and adapter cards.
+
+Cases are made of plastic, steel or aluminum.
+
+A device form factor - is its construction and look. The cases of desktop computers are produced in different form factors:
+
+* Horizontal case - this form factor is no longer popular
+* Full-size tower - this is a computer case which is oriented vertically
+* Compact tower - this is a smaller version of the full-size tower
+* All-in-one - all of the computer system components are integrated into the display
+
+
+Power Supplies
+
+Alternating current (AC) is supplied to the wall outlets. However, all components inside a computer require direct current (DC) power. To obtain DC power, computers use a power supply to convert AC power into a lower voltage DC power.
+
+The following describes the various computer desktop power supplies:
+
+* Advanced Technology (AT) - outdated model
+* AT Extended (ATX) - also outdated model
+* ATX12V - most popular power supply
+* ESP12V - were made for network services
+
+Power supply specifications are usually measured in watts (W).
+
+
+Motherboards
+
+The motherboard is the backbone of the computer. A motherboard is a printed board that contains buses, or electrical pathways, that interconnect electronic components.
+
+These are some connections on the motherboard where computer components can be added:
+
+* Central Processing Unit (CPU)
+* Random Access Memory
+* Expansion slots
+* Chipset
+* Basic input/output system (BIOS) chip and Unified Extensible Firmware Interface (UEFI) chip
+
+Most chipsets consist of the following two components:
+
+* Northbridge - controls high speed access to the RAM and video card
+* Southbridge – allows the CPU to communicate with slower speed devices such as hard drives, Universal Serial Bus (USB) ports and expansion slots
+
+There are three common motherboard form factors:
+
+* Advanced Technology eXtended (ATX) - most popular form factor
+* Micro-ATX - the smaller version of ATX
+* ITX - it is popular for its very small size
+CPU Architecture
+
+The CPU is the most important element of computer system. Most calculations take place in the CPU.
+
+The CPU socket or slot is the connection between the motherboard and the processor. Modern CPU sockets and processors are built around the following architectures:
+
+* Pin Grid Array (PGA) - the pins are on the underside of the processor
+* Land Grid Array (LGA) - the pins are in the socket
+
+
+ROM
+
+The read-only memory (ROM) chip is an essential computer chip. ROM chips are located on the motherboard and contain instructions that can be directly accessed by a CPU. The instructions stored in ROM include basic operation instructions such as booting the computer and loading the operating system.
+
+It is important to note that ROM chips save their data even when the computer is powered down.
+
+
+RAM
+
+RAM is the temporary storage for data and programs that are being accessed by the CPU. RAM is volatile memory. That means that the data is erased every time the computer is powered off.
+
+
+Adapter Cards and Expansion Slots
+
+Adapter cards increase the functionality of a computer.
+
+There are a variety of adapter cards that are used to expand and customize the capability of a computer:
+
+* Sound adapter - is responsible for sound
+* Network Interface Card (NIC) - is used to connect computer to network using cable
+* Wireless NIC - is used to connect computer to network using radio frequencies
+* Video adapter - is responsible for video
+* Capture adapter - sends a video signal to a computer to record signal on hard drive
+* TV tuner card - allows to watch and record television signals on PC
+* Universal Serial Bus (USB) port - is used to connect peripheral devices to computer
+* Redundant array of independent disks (RAID) - is used to connect multiple HDDs or SSDs. RAID make them to work as a one logical storage
+
+
+Storage Devices
+
+Storage drives read information from or write information to magnetic, optical, or semiconductor storage media. The drive can be used to store data permanently or to retrieve information from a media disk.
+
+The following are common types of storage drives:
+
+* Hard Disk Drive (HDD)
+* Solid State Drive (SSD)
+* Hybrid Drive
+* Optical Drive
+* Tape Drive
+* External Flash Drive
+
+
+Корпуса, Блоки Питания и Внутренние Компоненты ПК
+
+
+Корпуса
+
+Корпус настольного компьютера содержит все внутренние компоненты, такие как блок питания, материнская плата, центральный процессор (ЦП), память, дисковые накопители и платы адаптеров.
+
+Корпуса изготавливают из пластика, стали или алюминия.
+
+Формфактор устройства - это его конструкция и внешний вид. Корпуса настольных компьютеров выпускаются в различных формфакторах:
+
+* Горизонтальный корпус - такой формфактор больше не популярен
+* Полноразмерный вертикальный корпус - корпус компьютера, который расположен вертикально
+* Компактный вертикальный корпус - это уменьшенная версия полноразмерного вертикального корпуса
+* Моноблок - все компоненты компьютера интегрированы в монитор
+
+
+Блоки питания
+
+В электрическую розетку подается переменный ток. Однако, все компоненты внутри компьютера нуждаются в постоянном токе. Чтобы получить постоянный ток, компьютеры используют блок питания, чтобы превратить переменный ток в низковольтный постоянный ток.
+
+Ниже перечислены различные источники питания компьютера:
+
+* Advanced Technology (AT) - устаревшая модель
+* AT Extended (ATX) - также устаревшая модель
+* ATX12V - самый популярный блок питания
+* ESP12V - изготовлен для сетевый серверов 
+
+Мощность блока питания обычно измеряется в ваттах (Вт).
+
+
+Материнская плата
+
+Материнская плата - это основа компьютера. Материнская плата - это печатная плата, которая содержит шины, или электрические дорожки, которые связывают электронные компоненты.
+
+Ниже перечислены некоторые разъемы на материнской плате, в которые устанавливаются компоненты компьютера:
+
+* Центральный процессор (ЦП)
+* Оперативное запоминающее устройство (ОЗУ)
+* Слоты расширения
+* Чипсет
+* Микросхема базовой системы ввода/вывода (BIOS) и микросхема единого расширяемого микропрограммного интерфейса (UEFI)
+
+Большинство чипсетов состоят из следующих двух компонентов:
+
+* Северный мост - контролирует высокоскоростной доступ к ОЗУ и видеоадаптеру
+* Южный мост - позволяет ЦП взаимодействовать с более низкоскоростными устройствами, такие как жесткие диски, порты универсальной последовательной шины (USB) и слоты расширения
+
+Существуют три основных формфактора материнских плат:
+
+* Advanced Technology eXtended (ATX) - самый популярный формфактор материнской платы
+* Micro-ATX - уменьшенная версия ATX
+* ITX - популярна из-за своего очень маленького размера
+
+
+Архитектура ЦП
+
+ЦП - это самый важный элемент в компьютерной системе. Большинство вычислительных операций выполняются в ЦП.
+
+Сокет (или разъем) ЦП - это связь между материнской платой и ЦП. Современные сокеты ЦП и процессоры построены вокруг следующих архитектур:
+
+* Pin Grid Array (PGA) - контакты находятся на обратной стороне процессора
+* Land Grid Array (LGA) - контакты находятся в сокете ЦП
+
+
+ПЗУ
+
+Постоянное запоминающее устройство (ПЗУ) - это важная микросхема. ПЗУ находится на материнской плате и содержит команды, которые могут быть напрямую доступны центральным процессором. Команды, которые находятся в ПЗУ, включают в себя базовые операции, такие как загрузка компьютера и загрузка операционной системы.
+
+Важно отметить, что ПЗУ сохраняет свои данные, даже когда компьютер отключен.
+
+
+ОЗУ
+
+Оперативное запоминающее устройство (ОЗУ) - это временное хранилище для данных и программ, к которым обращается ЦП. ОЗУ является энергозависимой памятью. Это означает, что данные стираются каждый раз, когда компьютер отключается.
+
+
+Платы адаптеров и слоты расширения
+
+Платы адаптеров увеличивают функциональность компьютера.
+
+Существует множество плат адаптеров, которые используют для расширения и индивидуальной настройки возможностей компьютера:
+
+* Звуковой адаптер - отвечает за звук
+* Сетевой адаптер (NIC) - служит для подключения компьютера к сети при помощи кабеля
+* Адаптер беспроводной сети - служит для подключения компьютера при помощи радиочастот
+* Видеоадаптер - отвечает за графику
+* Плата захвата - отправляет видеосигнал на компьютер, чтобы записать сигнал на жесткий диск
+* Плата ТВ-тюнера - позволяет смотреть и записывать телевизионные сигналы на ПК
+* Порт универсальной последовательной шины (USB) - служит для подключения периферийных устройств к компьютеру
+* Избыточный массив независимых дисков (RAID) - служит для соединения нескольких HDD или SDD. RAID заставляет их работать как единое логическое хранилище
+
+
+
+Устройства хранения данных
+
+Устройства хранения данных считывают информацию с или записывают информацию на магнитные, оптические или полупроводниковые дисковые носители. Привод может использоваться для постоянного хранения данных или для получения информации с дискового носителя.
+
+Ниже приведены основные типы устройств хранения данных:
+
+* Жесткие диски (HDD)
+* Твердотельные накопители (SDD)
+* Гибридные диски
+* Привод оптических дисков
+* Магнитные ленты
+* Внешний флеш-диск
+
+
+
