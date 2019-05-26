@@ -2,7 +2,7 @@ $(document).ready(function() {
 
     /* MODAL WINDOW REMOVE */
     $(".discard").on("click", function() {
-        $(".modal_window").hide("fade", 1000);
+        $(".modal_window").hide("fade", 250);
     });
 
     /* OPEN VOCABULARY BUTTON */
@@ -13,7 +13,7 @@ $(document).ready(function() {
 
     /* CLOSE VOCABULARY BUTTON */
     $(".close_voc_btn").on("click", function() {
-        $(".open_voc_btn").show("slide", 50);
+        $(".open_voc_btn").show("slide", 1000);
         $(".vocabulary_box").hide("slide", 1000);
     });
 
