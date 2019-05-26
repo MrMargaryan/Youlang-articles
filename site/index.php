@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="modal_window">
+        <h1>Wana add some words?</h1>
+        <div class="row">
+            <a href="" class="button">Yes</a>
+            <a href="" class="button">Discard</a>
+        </div>
+    </div>
     <header>
         <div class="row">
             <a href="index.php"><img class="logo" src="img/logo.svg" alt="Юlang"></a>
@@ -20,7 +27,7 @@
     <main>
         <img class="article_main_img" src="img/desktop/article_main.png">
         <div class="article">
-            <h6 class="author">Gamlet Margaryan</h6>
+            <h6 class="author">Hamlet Margaryan</h6>
             <h1>Cases, Power Supplies and Internal PC Components</h1>
             <h2>Cases</h2>
             <br>
