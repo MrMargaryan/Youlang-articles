@@ -218,23 +218,25 @@ ul {
     border-top-right-radius: 20px;
     top: 0;
     left: calc(100% - 50px);
-    visibility: hidden;
 }
 
-.voc_button:after {
-    content: "";
-    height: 100px;
-    width: 100px;
-    left: 100%;
-    top: 100px;
-    position: absolute;
-    display: block;
-    z-index: -1;
-    background-color: #fff;
+.vocabulary_box {
+    width: 40%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    background-color: rgba(228, 225, 225, .9);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
     filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, .5));
+    z-index: 10;
 }
 
-*/
+
 /* .voc_button:after {
     content: "";
     height: 100px;
@@ -283,3 +285,5 @@ ul {
     border-color: transparent white;
     border-style: solid;
 }
+
+;

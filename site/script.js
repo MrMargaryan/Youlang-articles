@@ -9,14 +9,12 @@ $(document).ready(function() {
     $(".open_voc_btn").on("click", function() {
         $(".open_voc_btn").hide("drop", 50);
         $(".vocabulary_box").show("drop", 1000);
-        $(".close_voc_btn").show("drop", 1000);
-        $(".close_voc_btn").css("visibility", "visible", 1000);
     });
 
     /* CLOSE VOCABULARY BUTTON */
     $(".close_voc_btn").on("click", function() {
         $(".open_voc_btn").show("drop", 50);
         $(".vocabulary_box").hide("drop", 1000);
-        $(".close_voc_btn").hide("drop", 1000);
     });
+
 });
