@@ -2,19 +2,19 @@ $(document).ready(function() {
 
     /* MODAL WINDOW REMOVE */
     $(".discard").on("click", function() {
-        $(".modal_window").remove();
+        $(".modal_window").hide("fade", 1000);
     });
 
     /* OPEN VOCABULARY BUTTON */
     $(".open_voc_btn").on("click", function() {
-        $(".open_voc_btn").hide("drop", 50);
-        $(".vocabulary_box").show("drop", 1000);
+        $(".open_voc_btn").hide("slide", 50);
+        $(".vocabulary_box").show("slide", 1000);
     });
 
     /* CLOSE VOCABULARY BUTTON */
     $(".close_voc_btn").on("click", function() {
-        $(".open_voc_btn").show("drop", 50);
-        $(".vocabulary_box").hide("drop", 1000);
+        $(".open_voc_btn").show("slide", 50);
+        $(".vocabulary_box").hide("slide", 1000);
     });
 
 });
