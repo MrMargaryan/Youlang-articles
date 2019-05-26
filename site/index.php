@@ -57,8 +57,11 @@
             </menu>
         </div>
     </footer> -->
+    <button class="open_voc_btn">VOC</button>
+    <button class="close_voc_btn">X</button>
     <div class="vocabulary_box">
-        <a href="#" class="voc_button">voc</a>
+        <button class="close_voc_btn">X</button>
+        <!-- <a href="#" class="voc_button">voc</a> -->
     </div>
     <div class="box">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat pellentesque placerat.</div>
 </body>
