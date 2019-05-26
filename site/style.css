@@ -181,7 +181,8 @@ ul {
     color: #444;
 }
 
-.vocabulary_box {
+
+/* .vocabulary_box {
     width: 40%;
     height: 100vh;
     position: fixed;
@@ -195,7 +196,7 @@ ul {
     border-top-right-radius: 20px;
     filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, .5));
     z-index: 10;
-}
+} */
 
 .open_voc_btn {
     height: 50px;
@@ -220,10 +221,6 @@ ul {
     visibility: hidden;
 }
 
-.vocabulary_box a {
-    z-index: -1;
-}
-
 .voc_button:after {
     content: "";
     height: 100px;
@@ -237,7 +234,7 @@ ul {
     filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, .5));
 }
 
-
+*/
 /* .voc_button:after {
     content: "";
     height: 100px;
@@ -253,8 +250,8 @@ ul {
 
 .box {
     background: white;
-    width: 200px;
-    height: 100px;
+    width: 40%;
+    height: 100vh;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
     position: relative;
     padding: 25px;
