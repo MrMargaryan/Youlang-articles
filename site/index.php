@@ -57,7 +57,7 @@
     </footer> -->
     <div class="vocabulary_box">
         <a href="#" class="voc_button">voc</a>
-        <div class="vocabulary"></div>
     </div>
+    <div class="box">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat pellentesque placerat.</div>
 </body>
 </html>
