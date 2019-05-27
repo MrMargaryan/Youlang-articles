@@ -2,9 +2,13 @@ $(document).ready(function() {
 
     /* MODAL WINDOW REMOVE */
     $(".discard").on("click", function() {
-        $(".modal_window").hide("fade", 250);
+        if($(window).width() >= 750) {
+            $(".modal_window").hide("fade", 250);
+        } else {
+            $(".modal_window").hide("slide", { direction: "down", easing: "easeOutBounce" }, 470);
+        }
     });
-
+    
     /* OPEN VOCABULARY BUTTON */
     $(".open_voc_btn").on("click", function() {
         $(".open_voc_btn").hide("slide", 50);
