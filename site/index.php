@@ -10,6 +10,7 @@
     <script src="vendors/jquery-3.4.1.min.js"></script>
     <script src="vendors/jquery-ui.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="indexedDB.js"></script>
 </head>
 <body>
     <div class="modal_window">
@@ -58,10 +59,11 @@
         </div>
     </footer> -->
     
-    <!-- <button class="open_voc_btn voc_btn">VOC</button> -->
+    <button class="open_voc_btn voc_btn">VOC</button>
     <div class="vocabulary_box">
         <button class="close_voc_btn voc_btn">X</button>
-        <!-- <a href="#" class="voc_button">voc</a> -->
+        <a href="#" class="voc_button">voc</a>
+        
     </div>
     <!-- <div class="box">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat pellentesque placerat.</div> -->
 </body>
