@@ -29,7 +29,7 @@ request.onsuccess = function(event) {
     var data = store.getAll();
     data.onsuccess = function() {
         wordsHTML = '<ul>'
-        for (let i = 0; i < data.result.length; i++) {
+        for (let i = 0; i < data.result.length - 1; i++) {
             wordsHTML += '<li><span>' + data.result[i]["en"] + '</span> - <span>' + data.result[i]["ru"] + '</span></li>';
         };
         wordsHTML += '</ul>';
