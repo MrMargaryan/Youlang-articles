@@ -447,6 +447,15 @@ ul {
     border-radius: 5px;
 }
 
+.vocabulary_box h1 {
+    text-align: left;
+    font-size: 26pt;
+}
+
+.vocabulary_box h1:after {
+    content: none;
+}
+
 @media screen and (max-width: 1200px) {
     /* body {
         padding: 50px;
