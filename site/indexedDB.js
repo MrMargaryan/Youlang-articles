@@ -30,6 +30,7 @@ request.onsuccess = function(event) {
     data.onsuccess = function() {
         wordsHTML = '<ul>'
         for (let i = 0; i < data.result.length; i++) {
+
             wordsHTML += '<li>' + data.result[i]["en"] + ' - ' + data.result[i]["ru"] + '</li>';
         };
         wordsHTML += '</ul>';
