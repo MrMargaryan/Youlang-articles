@@ -5,7 +5,7 @@ $(document).ready(function() {
         if($(window).width() >= 750) {
             $(".modal_window").hide("fade", 250);
         } else {
-            $(".modal_window").hide("slide", { direction: "down", easing: "easeOutBounce" }, 470);
+            $(".modal_window").delay(105).hide("slide", { direction: "down", easing: "easeOutBounce" }, 470);
         }
     });
     

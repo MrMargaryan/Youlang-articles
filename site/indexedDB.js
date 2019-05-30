@@ -30,8 +30,7 @@ request.onsuccess = function(event) {
     data.onsuccess = function() {
         wordsHTML = '<ul>'
         for (let i = 0; i < data.result.length; i++) {
-
-            wordsHTML += '<li>' + data.result[i]["en"] + ' - ' + data.result[i]["ru"] + '</li>';
+            wordsHTML += '<li><span>' + data.result[i]["en"] + '</span> - <span>' + data.result[i]["ru"] + '</span></li>';
         };
         wordsHTML += '</ul>';
         $(document).ready(function() {
@@ -119,7 +118,7 @@ $(document).ready(function() {
                 descr: basicWords["basicWord" + (i + 1)]["descr"]
             });
 
-            wordsHTML += '<li>' + basicWords["basicWord" + (i + 1)]["en"] + ' - ' + basicWords["basicWord" + (i + 1)]["ru"] + '</li>';
+            // wordsHTML += '<li><span class="original">' + basicWords["basicWord" + (i + 1)]["en"]+ '</span>' + ' - <span class="trans">' + basicWords["basicWord" + (i + 1)]["ru"] + '</span></li>';
         };
 
         wordsHTML += '</ul>';
