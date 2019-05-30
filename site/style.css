@@ -171,11 +171,7 @@
     font-weight: 100 900;
     font-style: oblique 0deg 10deg;
     src: url("fonts/Inter.var.woff2") format("woff2");
-<<<<<<< HEAD
-  }
-=======
 }
->>>>>>> 3069fc719aca0f51b6e7dbbd07eb4747625d8dc5
 
 * {
     margin: 0;
@@ -449,6 +445,15 @@ ul {
     padding: 10px;
     background-color: rgba(235, 82, 85, 1);
     border-radius: 5px;
+}
+
+.vocabulary_box h1 {
+    text-align: left;
+    font-size: 26pt;
+}
+
+.vocabulary_box h1:after {
+    content: none;
 }
 
 @media screen and (max-width: 1200px) {

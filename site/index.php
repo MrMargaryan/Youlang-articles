@@ -24,8 +24,8 @@
         <div class="row">
             <a href="index.php"><img height="50" class="logo" src="img/logo.svg" alt="Юlang"></a>
             <menu>
-                <a class="link active menu" href="#">Article</a>
-                <a class="link menu" href="#">Vocabulary</a>
+                <a class="link active menu" href="index.php">Article</a>
+                <a class="link menu" href="vocabulary.php">Vocabulary</a>
             </menu>
         </div>
     </header>
@@ -47,6 +47,17 @@
             </ul>
             <img class="article_img" src="img/desktop/article_main.png">
             <small class="img_signature">Lorem ipsum dolor sit amet.</small>
+            <h2>Power Supplies</h2>
+
+        <p>Alternating current (AC) is supplied to the wall outlets. However, all components inside a computer require direct current (DC) power. To obtain DC power, computers use a power supply to convert AC power into a lower voltage DC power.</p>
+
+        <p>The following describes the various computer desktop power supplies:</p>
+        <ul>
+            <li>Advanced Technology (AT) - outdated model</li>
+            <li>AT Extended (ATX) - also outdated model</li>
+            <li>ATX12V - most popular power supply</li>
+            <li>ESP12V - were made for network services</li>
+        </ul>
         </div>
     </main>
     <!-- <footer>
@@ -69,6 +80,7 @@
     <button class="open_voc_btn voc_btn"><span>Vocabulary</span></button>
     <div class="vocabulary_box">
         <button class="close_voc_btn voc_btn"><span>Close</span></button>
+        <h1>Vocabulary</h1>
     </div>
 </body>
 </html>
