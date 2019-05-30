@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -71,6 +70,5 @@
     <div class="vocabulary_box">
         <button class="close_voc_btn voc_btn"><span>Close</span></button>
     </div>
-
 </body>
 </html>
