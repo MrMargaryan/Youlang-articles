@@ -26,7 +26,7 @@
             <a href="index.php"><img height="50" class="logo" src="img/logo.svg" alt="Юlang"></a>
             <menu>
                 <a class="link active menu" href="#">Article</a>
-                <a class="link menu" href="#">Vocalubere</a>
+                <a class="link menu" href="#">Vocabulary</a>
             </menu>
         </div>
     </header>
@@ -67,13 +67,10 @@
         <!-- <a href="#" class="voc_button">voc</a> -->
     <!-- </div> -->
 
-    <button class="open_voc_btn voc_btn">VOC</button>
+    <button class="open_voc_btn voc_btn"><span>Vocabulary</span></button>
     <div class="vocabulary_box">
-        <button class="close_voc_btn voc_btn">X</button>
-        <a href="#" class="voc_button">voc</a>
-
+        <button class="close_voc_btn voc_btn"><span>Close</span></button>
     </div>
 
-    <div class="box">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat pellentesque placerat.</div>
 </body>
 </html>
