@@ -5,11 +5,40 @@ let request = indexedDB.open("vocabularyDatabsse", 1);
 request.onupgradeneeded = function(event) {
     db = event.target.result;
 
-    let vocabulary = db.createObjectStore("vocabulary", { autoIncrement: true });
+    let vocabulary = db.createObjectStore("vocabulary", { keyPath: "id", autoIncrement: true });
+    console.log("hello");
 }
 
 request.onsuccess = function(event) {
     db = event.target.result;
+
+    let tx = db.transaction(["vocabulary"], "readwrite");
+    let store = tx.objectStore("vocabulary");
+
+    var checkIfPushed = store.get("pushed");
+    checkIfPushed.onsuccess = function() {
+        if (checkIfPushed.result === undefined) {
+
+        } else {
+            $(document).ready(function() {
+                $(".modal_window").css("display", "none");
+            });
+        }
+    };
+
+    var data = store.getAll();
+    data.onsuccess = function() {
+        wordsHTML = '<ul>'
+        for (let i = 0; i < data.result.length; i++) {
+            wordsHTML += '<li>' + data.result[i]["en"] + ' - ' + data.result[i]["ru"] + '</li>';
+        };
+        wordsHTML += '</ul>';
+        $(document).ready(function() {
+            $(".vocabulary_box").append(wordsHTML);
+        });
+    }
+
+
 }
 
 request.onerror = function(event) {
@@ -78,7 +107,7 @@ $(document).ready(function() {
         let tx = db.transaction(["vocabulary"], "readwrite");
         let store = tx.objectStore("vocabulary");
 
-        store.add({ pushed: true });
+        store.put({ id: "pushed", value: true });
 
         let wordsHTML = '<ul>';
         for (let i = 0; i < Object.keys(basicWords).length; i++) {
