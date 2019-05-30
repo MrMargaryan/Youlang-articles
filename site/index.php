@@ -1,8 +1,8 @@
-<?php
+<!-- <?php
    
     include('connection.php'); 
     
-?>
+?> -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -18,16 +18,16 @@
     <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
-    <div class="modal_window">
+    <!-- <div class="modal_window">
         <h1>Wana add some words?</h1>
         <div class="row">
             <button class="button yes">Yes</button>
             <button class="button discard">Discard</button>
         </div>
-    </div>
+    </div> -->
     <header>
         <div class="row">
-            <a href="index.php"><img class="logo" src="img/logo.svg" alt="Юlang"></a>
+            <!-- <a href="index.php"><img height="50" class="logo" src="img/logo.svg" alt="Юlang"></a> -->
             <menu>
                 <a class="link active menu" href="#">Article</a>
                 <a class="link menu" href="#">Vocalubere</a>
@@ -64,11 +64,11 @@
         </div>
     </footer> -->
     
-    <!-- <button class="open_voc_btn voc_btn">VOC</button> -->
+    <!-- <button class="open_voc_btn voc_btn">VOC</button>
     <div class="vocabulary_box">
-        <button class="close_voc_btn voc_btn">X</button>
+        <button class="close_voc_btn voc_btn">X</button> -->
         <!-- <a href="#" class="voc_button">voc</a> -->
-    </div>
+    <!-- </div> -->
     <!-- <div class="box">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat pellentesque placerat.</div> -->
 </body>
 </html>
