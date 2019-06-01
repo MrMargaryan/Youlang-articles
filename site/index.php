@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Youlang - статья</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="vendors/jquery-ui.min.css">
     <script src="vendors/jquery-3.4.1.min.js"></script>

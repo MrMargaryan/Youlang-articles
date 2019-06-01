@@ -118,7 +118,7 @@ $(document).ready(function() {
                 descr: basicWords["basicWord" + (i + 1)]["descr"]
             });
 
-            // wordsHTML += '<li><span class="original">' + basicWords["basicWord" + (i + 1)]["en"]+ '</span>' + ' - <span class="trans">' + basicWords["basicWord" + (i + 1)]["ru"] + '</span></li>';
+            wordsHTML += '<li><span class="original">' + basicWords["basicWord" + (i + 1)]["en"] + '</span>' + ' - <span class="trans">' + basicWords["basicWord" + (i + 1)]["ru"] + '</span></li>';
         };
 
         wordsHTML += '</ul>';
@@ -134,5 +134,12 @@ $(document).ready(function() {
             console.log("transaction complete");
         }
     });
+
+    /* $("button.button.discard").click(function() {
+        let tx = db.transaction(["vocabulary"], "readwrite");
+        let store = tx.objectStore("vocabulary");
+
+        store.put({ id: "pushed", value: true });
+    }); */
 
 });
