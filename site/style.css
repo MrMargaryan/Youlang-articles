@@ -338,6 +338,7 @@ h1:after {
 p {
     font-size: 12pt;
     margin-bottom: 20px;
+    word-spacing: .1em;
 }
 
 h2 {
