@@ -232,6 +232,7 @@ body {
     border-radius: 2px;
     transition: border .3s;
     font-weight: 400;
+    outline: none;
 }
 
 .modal_window button:hover {
@@ -380,6 +381,7 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    outline: none;
 }
 
 .voc_btn span {
@@ -457,6 +459,10 @@ ul {
     content: none;
 }
 
+ul.voc_item {
+    list-style: none;
+}
+
 @media screen and (max-width: 1200px) {
     /* body {
         padding: 50px;
@@ -515,4 +521,49 @@ ul {
     .article_img {
         width: 100%;
     }
+}
+
+
+/* VOCABULARY PAGE */
+
+table {
+    border-collapse: collapse;
+}
+
+table caption {
+    background: #e84848;
+    padding: 10px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .3);
+    color: white;
+    font-style: normal;
+    font-size: 26px;
+    text-align: center;
+    margin: 0;
+}
+
+table td,
+table th {
+    padding: 10px;
+}
+
+table th {
+    text-align: left;
+    font-size: 16px;
+}
+
+table tr:nth-child(2n) {
+    background: #E5E5E5;
+}
+
+table td {
+    text-align: justify;
+    font-size: 14px;
+}
+
+table td:nth-of-type(4) {
+    font-size: 12px;
+}
+
+.fa-trash {
+    color: #e84848;
 }
