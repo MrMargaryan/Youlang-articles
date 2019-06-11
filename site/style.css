@@ -194,8 +194,8 @@ a:active {
 .switch {
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 34px;
+    width: 54px;
+    height: 30px;
 }
 
 .switch input {
@@ -220,8 +220,8 @@ a:active {
 .slider:before {
     position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
+    height: 22px;
+    width: 22px;
     left: 4px;
     bottom: 4px;
     background-color: white;
@@ -231,9 +231,9 @@ a:active {
 }
 
 input:checked+.slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
+    -webkit-transform: translateX(24px);
+    -ms-transform: translateX(24px);
+    transform: translateX(24px);
 }
 
 body {
@@ -245,7 +245,7 @@ body {
 
 header {
     width: 100vw;
-    height: 60px;
+    height: 50px;
     background-color: #fff;
     display: flex;
     flex-direction: row;
@@ -308,7 +308,7 @@ main {
     align-items: center;
     color: #fff;
     width: 100vw;
-    height: calc(100vh - 60px);
+    height: calc(100vh - 50px);
     background-image: url(img/desktop/article_main.png);
     text-align: center;
     background-attachment: fixed;
@@ -358,14 +358,6 @@ h2 {
 }
 
 @media screen and (max-width: 350px) {
-    header {
-        height: 50px;
-    }
-
-    .heading {
-        height: calc(100vh - 50px);
-    }
-
     .row {
         width: 95%;
         font-size: 10pt;
