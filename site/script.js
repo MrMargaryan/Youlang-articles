@@ -2,19 +2,11 @@ $(document).ready(function () {
 
     /* MODAL WINDOW REMOVE */
     $(".discard").on("click", function () {
-        if ($(window).width() >= 700) {
-            $(".modal_window").hide("fade", 250);
-            setTimeout(
-                function() {
-                    $(".article").removeClass("mw_fix");
-                }, 250);
-        } else {
-            $(".modal_window").hide("fade", 250);
-            setTimeout(
-                function() {
-                    $(".article").removeClass("mw_fix");
-                }, 250);
-        }
+        $(".modal_window").hide("fade", 250);
+        setTimeout(
+            function () {
+                $(".article").removeClass("mw_fix");
+            }, 250);
     });
 
     /* OPEN VOCABULARY BUTTON */

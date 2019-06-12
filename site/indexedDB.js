@@ -2,38 +2,42 @@ let db;
 
 let request = indexedDB.open("vocabularyDatabsse", 1);
 
-request.onupgradeneeded = function(event) {
+request.onupgradeneeded = function (event) {
     db = event.target.result;
 
-    let vocabulary = db.createObjectStore("vocabulary", { keyPath: "id", autoIncrement: true });
+    let vocabulary = db.createObjectStore("vocabulary", {
+        keyPath: "id",
+        autoIncrement: true
+    });
     console.log("hello");
 }
 
-request.onsuccess = function(event) {
+request.onsuccess = function (event) {
     db = event.target.result;
 
     let tx = db.transaction(["vocabulary"], "readwrite");
     let store = tx.objectStore("vocabulary");
 
     var checkIfPushed = store.get("pushed");
-    checkIfPushed.onsuccess = function() {
+    checkIfPushed.onsuccess = function () {
         if (checkIfPushed.result === undefined) {
 
         } else {
-            $(document).ready(function() {
+            $(document).ready(function () {
                 $(".modal_window").css("display", "none");
+                $(".article").removeClass("mw_fix");
             });
         }
     };
 
     var data = store.getAll();
-    data.onsuccess = function() {
+    data.onsuccess = function () {
         wordsHTML = '<ul>'
         for (let i = 0; i < data.result.length - 1; i++) {
             wordsHTML += '<li><span>' + data.result[i]["en"] + '</span> - <span>' + data.result[i]["ru"] + '</span></li>';
         };
         wordsHTML += '</ul>';
-        $(document).ready(function() {
+        $(document).ready(function () {
             $(".vocabulary_box").append(wordsHTML);
         });
     }
@@ -41,7 +45,7 @@ request.onsuccess = function(event) {
 
 }
 
-request.onerror = function(event) {
+request.onerror = function (event) {
     alert("error opening database" + event.target.errorCode);
 }
 
@@ -102,12 +106,15 @@ let basicWords = {
     }
 }
 
-$(document).ready(function() {
-    $("button.button.yes").click(function() {
+$(document).ready(function () {
+    $("button.button.yes").click(function () {
         let tx = db.transaction(["vocabulary"], "readwrite");
         let store = tx.objectStore("vocabulary");
 
-        store.put({ id: "pushed", value: true });
+        store.put({
+            id: "pushed",
+            value: true
+        });
 
         let wordsHTML = '<ul>';
         for (let i = 0; i < Object.keys(basicWords).length; i++) {
@@ -124,13 +131,13 @@ $(document).ready(function() {
         wordsHTML += '</ul>';
         $(".vocabulary_box").append(wordsHTML);
 
-        if ($(window).width() >= 750) {
-            $(".modal_window").hide("fade", 250);
-        } else {
-            $(".modal_window").hide("slide", { direction: "down", easing: "easeOutBounce" }, 470);
-        }
+        $(".modal_window").hide("fade", 250);
+        setTimeout(
+            function () {
+                $(".article").removeClass("mw_fix");
+            }, 250);
 
-        tx.oncomplete = function() {
+        tx.oncomplete = function () {
             console.log("transaction complete");
         }
     });
