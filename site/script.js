@@ -2,13 +2,18 @@ $(document).ready(function () {
 
     /* MODAL WINDOW REMOVE */
     $(".discard").on("click", function () {
-        if ($(window).width() >= 750) {
+        if ($(window).width() >= 700) {
             $(".modal_window").hide("fade", 250);
+            setTimeout(
+                function() {
+                    $(".article").removeClass("mw_fix");
+                }, 250);
         } else {
-            $(".modal_window").delay(105).hide("slide", {
-                direction: "down",
-                easing: "easeOutBounce"
-            }, 470);
+            $(".modal_window").hide("fade", 250);
+            setTimeout(
+                function() {
+                    $(".article").removeClass("mw_fix");
+                }, 250);
         }
     });
 
@@ -24,7 +29,7 @@ $(document).ready(function () {
         $(".vocabulary_box").hide("slide", 1000);
     });
 
-    // Language to eng
+    // CHANGE LANGUAGE
     $(".change_lang").on("click", function () {
         if ($(".eng").hasClass("hide_lang")) {
             $(".eng").removeClass("hide_lang");
