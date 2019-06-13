@@ -2,7 +2,7 @@ let db;
 
 let request = indexedDB.open("vocabularyDatabsse", 1);
 
-request.onupgradeneeded = function (event) {
+request.onupgradeneeded = function(event) {
     db = event.target.result;
 
     let vocabulary = db.createObjectStore("vocabulary", {
@@ -12,18 +12,18 @@ request.onupgradeneeded = function (event) {
     console.log("hello");
 }
 
-request.onsuccess = function (event) {
+request.onsuccess = function(event) {
     db = event.target.result;
 
     let tx = db.transaction(["vocabulary"], "readwrite");
     let store = tx.objectStore("vocabulary");
 
     var checkIfPushed = store.get("pushed");
-    checkIfPushed.onsuccess = function () {
+    checkIfPushed.onsuccess = function() {
         if (checkIfPushed.result === undefined) {
 
         } else {
-            $(document).ready(function () {
+            $(document).ready(function() {
                 $(".modal_window").css("display", "none");
                 $(".article").removeClass("mw_fix");
             });
@@ -31,21 +31,19 @@ request.onsuccess = function (event) {
     };
 
     var data = store.getAll();
-    data.onsuccess = function () {
+    data.onsuccess = function() {
         wordsHTML = '<ul>'
         for (let i = 0; i < data.result.length - 1; i++) {
             wordsHTML += '<li><span>' + data.result[i]["en"] + '</span> - <span>' + data.result[i]["ru"] + '</span></li>';
         };
         wordsHTML += '</ul>';
-        $(document).ready(function () {
+        $(document).ready(function() {
             $(".vocabulary_box").append(wordsHTML);
         });
     }
-
-
 }
 
-request.onerror = function (event) {
+request.onerror = function(event) {
     alert("error opening database" + event.target.errorCode);
 }
 
@@ -106,8 +104,8 @@ let basicWords = {
     }
 }
 
-$(document).ready(function () {
-    $("button.button.yes").click(function () {
+$(document).ready(function() {
+    $("button.button.yes").click(function() {
         let tx = db.transaction(["vocabulary"], "readwrite");
         let store = tx.objectStore("vocabulary");
 
@@ -122,7 +120,7 @@ $(document).ready(function () {
                 en: basicWords["basicWord" + (i + 1)]["en"],
                 ru: basicWords["basicWord" + (i + 1)]["ru"],
                 trans: basicWords["basicWord" + (i + 1)]["trans"],
-                descr: basicWords["basicWord" + (i + 1)]["descr"]
+                /* descr: basicWords["basicWord" + (i + 1)]["descr"] */
             });
 
             wordsHTML += '<li><span class="original">' + basicWords["basicWord" + (i + 1)]["en"] + '</span>' + ' - <span class="trans">' + basicWords["basicWord" + (i + 1)]["ru"] + '</span></li>';
@@ -133,11 +131,11 @@ $(document).ready(function () {
 
         $(".modal_window").hide("fade", 250);
         setTimeout(
-            function () {
+            function() {
                 $(".article").removeClass("mw_fix");
             }, 250);
 
-        tx.oncomplete = function () {
+        tx.oncomplete = function() {
             console.log("transaction complete");
         }
     });

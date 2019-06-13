@@ -21,7 +21,7 @@ request.onsuccess = function(event) {
     data.onsuccess = function() {
         for (let i = 0; i < data.result.length - 1; i++) {
             $(document).ready(function() {
-                $(".vocabulary").append('<tr><td>' + data.result[i]["en"] + '</td><td>' + data.result[i]["ru"] + '</td><td>' + data.result[i]["trans"] + '</td><td>' + data.result[i]["descr"] + '</td><td><i class="fa fa-trash"></i></td></tr>');
+                $(".vocabulary").append('<tr><td>' + data.result[i]["en"] + '</td><td>' + data.result[i]["ru"] + '</td><td>' + data.result[i]["trans"] + '</td></tr>');
             });
         };
     }
