@@ -16,21 +16,32 @@
 <body>
     <header>
         <div class="row">
-            <a href="index.php"><img height="50" class="logo" src="img/logo.svg" alt="Юlang"></a>
             <menu>
-                <a class="link menu" href="index.php">Article</a>
-                <a class="link active menu" href="vocabulary.php">Vocabulary</a>
+                <a class="eng hide_lang" href="index.html">Articles</a>
+                <a class="eng active hide_lang" href="vocabulary.html">Vocabulary</a>
+                <a class="ru" href="index.html">Статьи</a>
+                <a class="ru active" href="vocabulary.html">Словарь</a>
             </menu>
+            <div class="lang">
+                <span class="ru">Рус</span>
+                <span class="eng hide_lang">Rus</span>
+                <label class="switch">
+                    <input type="checkbox" class="change_lang">
+                    <span class="slider"></span>
+                </label>
+                <span class="ru">Анг</span>
+                <span class="eng hide_lang">Eng</span>
+            </div>
         </div>
     </header>
     <main>
         <table class="vocabulary">
-            <caption>Vocabulary/Словарь</caption>
+            <!-- <caption><span class="eng hide_lang">Vocabulary</span><span class="ru">Словарь</span></caption> -->
             <tr>
-                <th>Word/Слово</th>
-                <th>Translation/Перевод</th>
-                <th>Transcription/Транскрипция</th>
-                <th>Description/Описание</th>
+                <th><span class="eng hide_lang">Word</span><span class="ru">Слово</span></th>
+                <th><span class="eng hide_lang">Translation</span><span class="ru">Перевод</span></th>
+                <th><span class="eng hide_lang">Transcription</span><span class="ru">Транскрипция</span></th>
+                <th><span class="eng hide_lang">Description</span><span class="ru">Описание</span></th>
                 <th></th>
             </tr>
 
