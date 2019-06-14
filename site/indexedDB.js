@@ -50,7 +50,7 @@ request.onerror = function(event) {
 let basicWords = {
     "basicWord1": {
         "en": "case",
-        "ru": "корпус ПК",
+        "ru": "корпус",
         "trans": "korpus",
         "descr": "an enclosure that contains most of the components of a personal computer"
     },
@@ -62,7 +62,7 @@ let basicWords = {
     },
     "basicWord3": {
         "en": "internal component",
-        "ru": "внутренний компонент ПК",
+        "ru": "внутренний компонент",
         "trans": "vnutrenniy komponent",
         "descr": "a component inside a computer case"
     },

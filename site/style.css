@@ -424,8 +424,7 @@ td {
     padding: 10px;
 }
 
-.fa-trash:before {
-    color: red;
+.fa.fa-volume-up {
     cursor: pointer;
 }
 

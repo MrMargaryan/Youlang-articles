@@ -21,14 +21,17 @@ request.onsuccess = function(event) {
     data.onsuccess = function() {
         for (let i = 0; i < data.result.length - 1; i++) {
             $(document).ready(function() {
-                $(".vocabulary").append('<tr><td>' + data.result[i]["en"] + '</td><td>' + data.result[i]["ru"] + '</td><td>' + data.result[i]["trans"] + '</td></tr>');
+                $(".vocabulary").append('<tr><td class="speaker"><i class="fa fa-volume-up"></i></td><td class="en_word">' + data.result[i]["en"] + '</td><td class="ru_word">' + data.result[i]["ru"] + '</td><td>' + data.result[i]["trans"] + '</td></tr>');
             });
         };
     }
-
-
 }
 
 request.onerror = function(event) {
     alert("error opening database" + event.target.errorCode);
 }
+
+$('body').on('click', '.fa-volume-up', function() {
+    window.speechSynthesis.speak(new SpeechSynthesisUtterance($(this).parent().parent().children(".en_word")[0].innerHTML));
+    window.speechSynthesis.speak(new SpeechSynthesisUtterance($(this).parent().parent().children(".ru_word")[0].innerHTML));
+})
