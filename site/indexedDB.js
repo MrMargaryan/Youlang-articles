@@ -74,7 +74,7 @@ let basicWords = {
     },
     "basicWord5": {
         "en": "motherboard",
-        "ru": "матринская плата",
+        "ru": "материнская плата",
         "trans": "materinskaya plata",
         "descr": "a printed board that contains buses, or electrical pathways, that interconnect electronic components"
     },

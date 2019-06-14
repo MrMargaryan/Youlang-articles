@@ -32,6 +32,15 @@ request.onerror = function(event) {
 }
 
 $('body').on('click', '.fa-volume-up', function() {
-    window.speechSynthesis.speak(new SpeechSynthesisUtterance($(this).parent().parent().children(".en_word")[0].innerHTML));
-    window.speechSynthesis.speak(new SpeechSynthesisUtterance($(this).parent().parent().children(".ru_word")[0].innerHTML));
-})
+
+    var en_word = new SpeechSynthesisUtterance();
+    en_word.text = $(this).parent().parent().children(".en_word")[0].innerHTML;
+    en_word.lang = "en-US";
+
+    var ru_word = new SpeechSynthesisUtterance();
+    ru_word.text = $(this).parent().parent().children(".ru_word")[0].innerHTML;
+    ru_word.lang = "ru-RU";
+
+    window.speechSynthesis.speak(en_word);
+    window.speechSynthesis.speak(ru_word);
+});
