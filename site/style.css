@@ -428,6 +428,13 @@ td {
     cursor: pointer;
 }
 
+.selected_box {
+    display: none;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(217, 255, 0);
+}
+
 @media screen and (max-width: 700px) {
     .modal_window {
         width: 95vw;
