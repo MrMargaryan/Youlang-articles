@@ -139,7 +139,7 @@ $('body').on('click', '.add_word_to_voc_from_selectred_box_ru', function() {
     store.add({
         en: document.querySelector(".translation").textContent,
         ru: document.querySelector('.word').textContent,
-        trans: cyrill_to_latin(document.querySelector(".translation").textContent)
+        trans: cyrill_to_latin(document.querySelector(".word").textContent)
     });
 
 });
@@ -152,7 +152,7 @@ $('body').on('click', '.add_word_to_voc_from_selectred_box_eng', function() {
     store.add({
         en: document.querySelector(".word").textContent,
         ru: document.querySelector('.translation').textContent,
-        trans: cyrill_to_latin(document.querySelector(".word").textContent)
+        trans: cyrill_to_latin(document.querySelector(".translation").textContent)
     });
 
 });
