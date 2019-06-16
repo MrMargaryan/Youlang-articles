@@ -84,9 +84,9 @@ $('.ru').on('mouseup', function() {
                 var json = JSON.parse(res);
                 if (json.code == 200) {
                     $(".selected_box").css("display", "flex");
-                    $(".selected_box").append("<p><b>Word:</b> <span class='word'>" + text + "</span>" + "</p>");
-                    $(".selected_box").append("<p><b>Translation:</b> <span class='translation'>" + json.text[0] + "</span>" + "</p>");
-                    $(".selected_box").append("<button class='add_word_to_voc_from_selectred_box_ru'>Add word</button>")
+                    $(".selected_box").append("<p><b class='eng hide_lang'>Word:</b><b class='ru'>Слово:</b> <span class='word'>" + text + "</span>" + "</p>");
+                    $(".selected_box").append("<p><b class='eng hide_lang'>Translation:</b><b class='ru'>Перевод:</b> <span class='translation'>" + json.text[0] + "</span>" + "</p>");
+                    $(".selected_box").append("<button class='add_word_to_voc_from_selectred_box_ru'><span class='eng hide_lang'>Add word</span><span class='ru'>Добавить слово</sapn></button>")
                 } else {
                     alert("Error Code: " + json.code);
                 }
@@ -116,10 +116,10 @@ $('.eng').on('mouseup', function() {
                 var res = this.responseText;
                 var json = JSON.parse(res);
                 if (json.code == 200) {
-                    $(".selected_box").css("display", "block");
-                    $(".selected_box").append("<p>Word: </p><span class='word'>" + text + "</span>");
-                    $(".selected_box").append("<p>Translation: </p><span class='translation'>" + json.text[0] + "</span><br><br><br>");
-                    $(".selected_box").append("<button class='add_word_to_voc_from_selectred_box_eng'>Add word to the vocabulary</button>")
+                    $(".selected_box").css("display", "flex");
+                    $(".selected_box").append("<p><b class='eng hide_lang'>Word:</b><b class='ru'>Слово:</b> <span class='word'>" + text + "</span>" + "</p>");
+                    $(".selected_box").append("<p><b class='eng hide_lang'>Translation:</b><b class='ru'>Перевод:</b> <span class='translation'>" + json.text[0] + "</span>" + "</p>");
+                    $(".selected_box").append("<button class='add_word_to_voc_from_selectred_box_ru'><span class='eng hide_lang'>Add word</span><span class='ru'>Добавить слово</sapn></button>")
                 } else {
                     alert("Error Code: " + json.code);
                 }
